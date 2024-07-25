@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/YWJ/Desktop/提交作品/重要代码/10112_AlphaMeow/hi3861_control/alpha_miao_control-main/src/applications/sample/wifi-iot/app/chessrobot",
+      "program": "c:/Users/YWJ/Desktop/提交作品/重要代码/10112_AlphaMeow/hi3861_control/alpha_miao_control-main/src/applications/sample/wifi-iot/app/chessrobot/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+# Hisilicon sdk_linux sample module makefile public param
+
+# 各模块makefile均应在前面include此文件
+export ROOT_DIR := ..
+export PLATFORM_ROOT := $(ROOT_DIR)/platform
+export TAURUS_ROOT := $(ROOT_DIR)/taurus
+export OUTPUT_DIR := $(ROOT_DIR)/output
+export SCRIPT_ROOT := .
+
+# OpenHarmony的代码根目录
+export OPENHARMONY_ROOT := /home/openharmony
+
+# OpenHarmony的third_party代码根目录
+export THIRD_PARTY_DIR := $(OPENHARMONY_ROOT)/third_party
+
+# hi3516dv300的sdk_linux目录
+export SDK_LINUX_DIR := $(OPENHARMONY_ROOT)/sdk_linux
+
+# hi3516dv300的output目录
+TAURUS_OUT_DIR :=$(OPENHARMONY_ROOT)/out/hispark_taurus/ipcamera_hispark_taurus_linux
+
+# 交叉编译器
+export CC := $(OPENHARMONY_ROOT)/prebuilts/clang/ohos/linux-x86_64/llvm/bin/clang
+export CXXCPP := $(OPENHARMONY_ROOT)/prebuilts/clang/ohos/linux-x86_64/llvm/bin/clang++
+
+# 编译所依赖的库目录
+export SDK_LINUX_OUT_LIB := $(SDK_LINUX_DIR)/out/lib
+export OUT_USR_LIB := $(TAURUS_OUT_DIR)/usr/lib
+export OUT_UNSTRIPPED_LIB :=  $(TAURUS_OUT_DIR)/unstripped/usr/lib/
+
+# 编译所依赖的头文件和源文件目录
+export SDK_LINUX_INCLUDE_DIR := $(SDK_LINUX_DIR)/include
+export SDK_LINUX_CBB_DIR := $(SDK_LINUX_DIR)/drv/mpp/cbb/include
+export SDK_LINUX_INIT_DIR := $(SDK_LINUX_DIR)/drv/mpp/cbb/init
+export PLATRORM_COMMON_DIR := $(PLATFORM_ROOT)/common
+export SVP_COMMON_DIR := $(PLATFORM_ROOT)/svp/common
+export BOUNDS_CHECKING_DIR := $(OPENHARMONY_ROOT)/third_party/bounds_checking_function/include
+
+# target输出的存储目录
+export TARGET_ROOT := $(OUTPUT_DIR)/
+export TARGET_DIR := $(TARGET_ROOT)
+
+# platform项目子模块目录
+export AUDIO_SAMPLE_DIR := $(PLATFORM_ROOT)/audio
+export HIGV_SAMPLE_DIR := $(PLATFORM_ROOT)/higv
+export VIO_SAMPLE_DIR := $(PLATFORM_ROOT)/vio
+export IVE_SAMPLE_DIR := $(PLATFORM_ROOT)/svp/ive
+export NNIE_SAMPLE_DIR := $(PLATFORM_ROOT)/svp/nnie
+
+# taurus项目子模块目录
+export AI_SAMPLE_DIR := $(TAURUS_ROOT)/ai_sample
+export COLOR_SAMPLE_DIR := $(TAURUS_ROOT)/color_space_convert
+export HELLOWORLD_SAMPLE_DIR := $(TAURUS_ROOT)/helloworld
+export HISM_SERVER_SAMPLE_DIR := $(TAURUS_ROOT)/histreaming_server
+export LIGHT_SENSOR_DEMO_DIR := $(TAURUS_ROOT)/light_sensor_demo
+export RESIZE_CROP_SAMPLE_DIR := $(TAURUS_ROOT)/resize_crop
+export RTSP_SAMPLE_DIR := $(TAURUS_ROOT)/rtsp_sample
+export STORE_SAMPLE_DIR := $(TAURUS_ROOT)/store_sample
+export SWITCH_DEMO_DIR := $(TAURUS_ROOT)/switch_demo
+export UART_SAMPLE_DIR := $(TAURUS_ROOT)/uart_sample
+export OPENCV_TAURUS_TEST_DIR := $(TAURUS_ROOT)/opencv_taurus_test
+export HOUGH_CIRCLE_TEST_DIR := $(TAURUS_ROOT)/hough_circle_test
+export WORKS_V0.1_DIR := $(TAURUS_ROOT)/works_v0.1
